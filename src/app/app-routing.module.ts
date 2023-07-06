@@ -8,7 +8,7 @@ import { AboutPageComponent } from './shared/pages/home-page/about-page/about-pa
 
 const routes: Routes = [
     {
-        path: 'home',
+        path: '',
         component: HomePageComponent
     },
     {
@@ -17,7 +17,7 @@ const routes: Routes = [
     },
     {
         path: '**',
-        redirectTo: 'home'
+        redirectTo: ''
     }
 
 ];
