@@ -13,6 +13,10 @@ import { switchMap } from 'rxjs';
 })
 export default class CountryPageComponent implements OnInit {
 
+
+    public country?: Country;
+
+
   constructor (
      private activatedRoute: ActivatedRoute,
      private countriesService: CountriesService,
@@ -30,9 +34,8 @@ export default class CountryPageComponent implements OnInit {
       if( !country ) {
         return this.router.navigateByUrl('');
       }
-      console.log('Tenemos un País');
-      return;
-      
+      return this.country = country;
+    //  return;
      
     });
   }
