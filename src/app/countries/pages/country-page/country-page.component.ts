@@ -39,8 +39,5 @@ export default class CountryPageComponent implements OnInit {
      
     });
   }
-
- 
-
   
 }

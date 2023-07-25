@@ -21,5 +21,11 @@ export class ByCapitalPageComponent {
     })
   }
 
+    searchCountry (code: string){
+      this.countriesService.searchCountryByAlphaCode(code)
+      .subscribe( country => {
+        console.log({country})
+      }); 
+    }
 
 }
