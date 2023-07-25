@@ -13,13 +13,8 @@
 <div class="row">
     <div class="col">
         <hr>
-        <!-- Tabla de resultados -->
-        <!-- <ul>
-            <li *ngFor="let country of countries">
-                {{country.capital}} - {{country.population}}
+        <shared-loading-spinner></shared-loading-spinner>
 
-            </li>
-        </ul> -->
         <countries-table [countries]="countries"></countries-table>
     </div>
 
