@@ -7,6 +7,9 @@ import { Component, Input, Output,EventEmitter } from '@angular/core';
   ]
 })
 export class SearchBoxComponent {
+
+  
+
   @Input() 
   public placeholder: string = '';
 
