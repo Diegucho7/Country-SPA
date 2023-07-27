@@ -15,7 +15,7 @@ export class CountriesService {
         return this.http.get<Country[]>(url)
         .pipe(
             catchError(()=> of([])),
-            // delay(2000),
+            
         );
     }
 
@@ -25,7 +25,7 @@ export class CountriesService {
         .pipe(
             map(countries => countries.length > 0 ? countries[0]: null),
             catchError(() => of(null)),
-            delay(2000),
+            
         );
     }
     searchCapital( term : string): Observable<Country[]>{
