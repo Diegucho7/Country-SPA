@@ -23,7 +23,7 @@ export class ByRegionPageComponent implements OnInit {
 
     this.selectedRegion = region;
 
-    this.countriesService.searchByRegion(region)
+    this.countriesService.searchRegion(region)
     .subscribe(countries => {
       this.countries = countries;
     })
